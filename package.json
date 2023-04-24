@@ -10,7 +10,6 @@
   },
   "scripts": {
     "test-bs": "wdio run ./wdio.conf.browserstack.js",
-    "test": "wdio run ./wdio.conf.local.js",
-    "wdio": "wdio run ./wdio.conf.js"
+    "test": "wdio run ./wdio.conf.local.js"
   }
 }

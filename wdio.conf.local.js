@@ -14,7 +14,7 @@ exports.config = {
         "platformName": "Android",
         "appium:automationName": "UiAutomator2",
         "appium:deviceName": "My Android Device",
-        "appium:app": "/Users/denniswhalen/flutter_webdriver_appium/app/WikipediaSample.apk"
+        "appium:app": "/Users/dennis.whalen/flutter_webdriverio_appium/app/WikipediaSample.apk"
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',

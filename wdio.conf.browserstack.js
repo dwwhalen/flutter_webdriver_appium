@@ -17,14 +17,14 @@ exports.config = {
     ],
   
     capabilities: [{
+    //   'bstack:options': {
+    //     deviceName: 'Samsung Galaxy S23 Ultra',
+    //     osVersion: "13.0"
+    //   }
+    // }, {
       'bstack:options': {
-        deviceName: 'Google Pixel 3',
-        osVersion: "9.0"
-      }
-    }, {
-      'bstack:options': {
-        deviceName: 'Samsung Galaxy S10e',
-        osVersion: "9.0"
+        deviceName: 'Google Pixel 6 Pro',
+        osVersion: "12.0"
       }
     }],
   
@@ -51,7 +51,7 @@ exports.config = {
     coloredLogs: true,
     screenshotPath: './errorShots/',
     baseUrl: '',
-    waitforTimeout: 10000,
+    waitforTimeout: 30000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
   

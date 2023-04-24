@@ -4,15 +4,14 @@ var assert = require('assert');
 describe('Wiki page', () => {
     it('search should return results', async () => {
 
-        await assert (true);
+        await WikiPage.clickSearchTextbox();
 
-        // await WikiPage.clickSearchTextbox();
-        // await WikiPage.insertTextAndWait();
-        
-        // var allProductsName = await $$(`android.widget.TextView`);
-        // await assert(allProductsName.length > 0);
+        await WikiPage.insertTextAndWait();
 
-        // await assert(WikiPage.searchResultCount > 0);
+        var searchResults = await WikiPage.searchResults;
+
+        await assert(searchResults.length > 0);
+
     });
 });
 

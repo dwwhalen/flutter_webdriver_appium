@@ -11,13 +11,17 @@ class WikiPage extends Page {
         return $(`~Search Wikipedia`);
     }
 
+    get searchResults () {
+        return $$(`android.widget.TextView`)
+    }
+
     // get searchTextbox () {
     //     return $('android=new UiSelector().resourceId("org.wikipedia.alpha:id/search_src_text")');
     // }
 
-    get searchResultCount () {
-        return $$(`android.widget.TextView`).length;
-    }
+    // async searchResultCount () {
+    //     return await this.searchResults.length;
+    // }
 
     async clickSearchTextbox () {
         await this.searchWikipediaTextbox.waitForDisplayed({ timeout: 10000 });
@@ -28,8 +32,8 @@ class WikiPage extends Page {
         var insertTextSelector = await $('android=new UiSelector().resourceId("org.wikipedia.alpha:id/search_src_text")');
         await insertTextSelector.waitForDisplayed({ timeout: 10000 });
     
-        await this.searchTextbox.addValue("BrowserStack");
-        await browser.pause(5000);
+        await insertTextSelector.addValue("BrowserStack");
+        await browser.pause(20000);
     }
 }
 

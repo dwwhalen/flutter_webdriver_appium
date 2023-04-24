@@ -8,6 +8,6 @@
     "appium": "^1.22.3"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "test-bs": "wdio run ./browserstack.conf.js"
   }
 }

@@ -11,7 +11,7 @@ exports.config = {
           buildIdentifier: '${BUILD_NUMBER}',
           browserstackLocal: true,
           opts: { forcelocal: false, localIdentifier: "webdriverio-appium-app-browserstack-repo" },
-          app: '/Users/dennis.whalen/flutter_webdriverio_appium/app/WikipediaSample.apk',
+          app: './app/WikipediaSample.apk',
         }
       ]
     ],

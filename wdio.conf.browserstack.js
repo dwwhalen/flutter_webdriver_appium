@@ -32,7 +32,7 @@ exports.config = {
       'bstack:options': {
         projectName: "Flutter/WebdriverIO/Appium POC",
         buildName: 'Flutter/WebdriverIO/Appium POC build',
-        sessionName: 'BStack parallel webdriverio-appium',
+        sessionName: 'Flutter/WebdriverIO/Appium POC session',
         debug: true,
         networkLogs: true,
         source: 'webdriverio:appium-sample-sdk:v1.0'

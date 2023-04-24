@@ -32,8 +32,8 @@ class WikiPage extends Page {
         var insertTextSelector = await $('android=new UiSelector().resourceId("org.wikipedia.alpha:id/search_src_text")');
         await insertTextSelector.waitForDisplayed({ timeout: 10000 });
     
-        await insertTextSelector.addValue("BrowserStack");
-        await browser.pause(20000);
+        await insertTextSelector.addValue("George Jones");
+        await browser.pause(5000);
     }
 }
 

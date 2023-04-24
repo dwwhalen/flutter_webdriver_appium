@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@wdio/appium-service": "^8.8.6",
     "@wdio/browserstack-service": "^8.8.6",
     "@wdio/cli": "^8.8.6",
     "@wdio/jasmine-framework": "^8.8.6",
@@ -8,6 +9,7 @@
     "appium": "^1.22.3"
   },
   "scripts": {
-    "test-bs": "wdio run ./browserstack.conf.js"
+    "test-bs": "wdio run ./wdio.conf.browserstack.js",
+    "test": "wdio run ./wdio.conf.local.js"
   }
 }

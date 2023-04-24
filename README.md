@@ -11,5 +11,11 @@ export BROWSERSTACK_USERNAME={your username}
 export BROWSERSTACK_ACCESS_KEY={your access key}
 ```
 
+## Run a test locally 
+### start appium
+`appium`
+### run the test
+`npm run test`
+
 ## Run a test in BrowserStack
 `npm run test-bs`

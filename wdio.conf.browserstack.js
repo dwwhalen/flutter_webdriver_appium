@@ -17,11 +17,11 @@ exports.config = {
     ],
   
     capabilities: [{
-    //   'bstack:options': {
-    //     deviceName: 'Samsung Galaxy S23 Ultra',
-    //     osVersion: "13.0"
-    //   }
-    // }, {
+      'bstack:options': {
+        deviceName: 'Samsung Galaxy S23 Ultra',
+        osVersion: "13.0"
+      }
+    }, {
       'bstack:options': {
         deviceName: 'Google Pixel 6 Pro',
         osVersion: "12.0"
@@ -46,7 +46,7 @@ exports.config = {
       './test/specs/wiki-search-e2e.js'
     ],
     exclude: [],
-  
+
     logLevel: 'info',
     coloredLogs: true,
     screenshotPath: './errorShots/',
@@ -55,7 +55,11 @@ exports.config = {
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
   
-    framework: 'jasmine',
+    framework: 'mocha',
+    mochaOpts: {
+      ui: 'bdd',
+      timeout: 60000
+  },
   };
   
   // Code to support common capabilities

@@ -9,7 +9,7 @@
     "appium": "^1.22.3"
   },
   "scripts": {
-    "test-bs": "wdio run ./wdio.conf.browserstack.js",
-    "test": "wdio run ./wdio.conf.local.js"
+    "test-wiki-bs": "wdio run ./wdio.conf.wiki.browserstack.js",
+    "test-wiki": "wdio run ./wdio.conf.wiki.local.js"
   }
 }

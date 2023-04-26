@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@percy/cli": "^1.24.0",
+    "@percy/appium-app": "^0.0.7",
     "@wdio/appium-service": "^8.8.6",
     "@wdio/browserstack-service": "^8.8.6",
     "@wdio/cli": "^8.8.6",
@@ -12,7 +14,9 @@
   "scripts": {
     "test-wiki-bs": "wdio run ./wdio.conf.wiki.browserstack.js",
     "test-wiki": "wdio run ./wdio.conf.wiki.local.js",
+    "test-wiki-percy": "percy app:exec -- npm run test-wiki",
     "test-hello-android": "wdio run ./wdio.conf.flutter.android.local.js",
+    "test-hello-android-percy": "percy app:exec -- npm run test-hello-android",
     "test-hello-android-bs": "wdio run ./wdio.conf.flutter.android.bs.js",
     "test-hello-ios": "wdio run ./wdio.conf.flutter.ios.local.js"
   }

@@ -1,8 +1,10 @@
 exports.config = {
     runner: 'local',
-    hostname: "http://localhost",
-    path: '/wd/hub',
-    port: 4723,
+    port: 4723, // default appium port
+    services: ['appium'],
+    // hostname: "http://localhost",
+    // path: '/wd/hub',
+    // port: 4723,
     specs: [
         './test/specs/wiki-apk-testing/*.js'
     ],

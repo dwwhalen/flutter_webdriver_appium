@@ -1,8 +1,10 @@
 exports.config = {
     runner: 'local',
-    hostname: "http://localhost",
-    path: '/wd/hub',
-    port: 4723,
+    port: 4723, // default appium port
+    services: ['appium'],
+    // hostname: "http://localhost",
+    // path: '/wd/hub',
+    // port: 4723,
     specs: [
         './test/specs/hello-testing/*.js'
     ],
@@ -12,9 +14,8 @@ exports.config = {
     maxInstances: 10,
     capabilities: [{
         "platformName": "Android",
-        "appium:automationName": "Flutter",
-        'appium:noReset': false,
-        // "appium:deviceName": "My Android Device",
+        "appium:automationName": "flutter",
+        "appium:deviceName": "My Android Device",
         // "appium:app": "/Users/dennis.whalen/flutter_webdriverio_appium/app/WikipediaSample.apk"
         "appium:app": "/Users/dennis.whalen/flutter_webdriverio_appium/app/android-hello.apk"
 

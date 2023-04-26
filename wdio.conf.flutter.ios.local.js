@@ -13,11 +13,11 @@ exports.config = {
     capabilities: [{
         "platformName": "iOS",
         "appium:automationName": "Flutter",
-        'appium:platformVersion': '16.1',
+        'appium:platformVersion': '16.0',
         'appium:deviceName': 'iPhone 14',
         'appium:connectionRetryTimeout': 60000,
         'appium:noReset': false,
-        "appium:app": "/Users/denniswhalen/flutter_webdriverio_appium/app/ios-hello.zip"
+        "appium:app": "/Users/dennis.whalen/flutter_webdriverio_appium/app/ios-hello.zip"
 
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent

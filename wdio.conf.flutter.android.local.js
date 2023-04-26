@@ -13,9 +13,10 @@ exports.config = {
     capabilities: [{
         "platformName": "Android",
         "appium:automationName": "Flutter",
+        'appium:noReset': false,
         // "appium:deviceName": "My Android Device",
         // "appium:app": "/Users/dennis.whalen/flutter_webdriverio_appium/app/WikipediaSample.apk"
-        "appium:app": "/Users/denniswhalen/flutter_webdriverio_appium/app/android-hello.apk"
+        "appium:app": "/Users/dennis.whalen/flutter_webdriverio_appium/app/android-hello.apk"
 
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent

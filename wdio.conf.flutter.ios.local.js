@@ -17,7 +17,7 @@ exports.config = {
         'appium:deviceName': 'iPhone 14',
         'appium:connectionRetryTimeout': 60000,
         'appium:noReset': false,
-        "appium:app": "/Users/denniswhalen/flutter_webdriverio_appium/app/ios-sim-debug.zip"
+        "appium:app": "/Users/denniswhalen/flutter_webdriverio_appium/app/ios-hello.zip"
 
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent

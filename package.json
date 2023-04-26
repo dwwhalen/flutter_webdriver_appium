@@ -13,6 +13,7 @@
     "test-wiki-bs": "wdio run ./wdio.conf.wiki.browserstack.js",
     "test-wiki": "wdio run ./wdio.conf.wiki.local.js",
     "test-hello-android": "wdio run ./wdio.conf.flutter.android.local.js",
+    "test-hello-android-bs": "wdio run ./wdio.conf.flutter.android.bs.js",
     "test-hello-ios": "wdio run ./wdio.conf.flutter.ios.local.js"
   }
 }

@@ -1,7 +1,7 @@
 exports.config = {
     runner: 'local',
     port: 4723, // default appium port
-    services: ['appium'],
+    // services: ['appium'],
     // hostname: "http://localhost",
     // path: '/wd/hub',
     // port: 4723,
@@ -45,7 +45,7 @@ exports.config = {
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
-    services: ['appium'],
+    // services: ['appium'],
     framework: 'mocha',
     //
     // The number of times to retry the entire specfile when it fails as a whole

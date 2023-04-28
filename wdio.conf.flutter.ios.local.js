@@ -1,7 +1,7 @@
 exports.config = {
     runner: 'local',
     port: 4723, // default appium port
-    services: ['appium'],
+    // services: ['appium'],
     specs: [
         './test/specs/hello-testing/*.js'
     ],
@@ -15,7 +15,7 @@ exports.config = {
         'appium:platformVersion': '16.1',
         'appium:deviceName': 'iPhone 14 Plus',
         'appium:connectionRetryTimeout': 120000,
-        'appium:noReset': true,
+        'appium:noReset': false,
         "appium:app": "/Users/denniswhalen/flutter_webdriverio_appium/app/ios-hello.zip"
 
     }],
@@ -44,7 +44,7 @@ exports.config = {
     waitforTimeout: 10000,
     connectionRetryTimeout: 60000,
     connectionRetryCount: 1,
-    services: ['appium'],
+    // services: ['appium'],
     framework: 'mocha',
     //
     // The number of times to retry the entire specfile when it fails as a whole

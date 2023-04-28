@@ -15,20 +15,22 @@ export BROWSERSTACK_USERNAME={your username}
 export BROWSERSTACK_ACCESS_KEY={your access key}
 ```
 
-## Run a test 
-### start appium
-`appium`
+## test a native app
+
 ### run the wikipedia android test locally
 `npm run test-wiki`
-### run the wikipedia android test locally
+### run the wikipedia android test in browserstack
 `npm run test-wiki-bs`
+
+## test a flutter app
 
 ### run the flutter android test locally
 `npm run test-hello-android`
+### run the flutter android test locally WITH percy (be sure to set PERCY_TOKEN)
+`npm run test-hello-android-percy`
+
 ### run the flutter ios test locally
 `npm run test-hello-ios`
-
-
 
 ### Run a test in BrowserStack
 `npm run test-bs`

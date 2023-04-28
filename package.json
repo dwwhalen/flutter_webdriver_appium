@@ -18,6 +18,7 @@
     "test-hello-android": "wdio run ./wdio.conf.flutter.android.local.js",
     "test-hello-android-percy": "percy app:exec -- npm run test-hello-android",
     "test-hello-android-bs": "wdio run ./wdio.conf.flutter.android.bs.js",
-    "test-hello-ios": "wdio run ./wdio.conf.flutter.ios.local.js"
+    "test-hello-ios": "wdio run ./wdio.conf.flutter.ios.local.js",
+    "test-hello-ios-percy": "percy app:exec -- npm run test-hello-ios"
   }
 }

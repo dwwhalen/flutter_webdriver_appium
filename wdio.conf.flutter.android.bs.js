@@ -11,7 +11,7 @@ exports.config = {
           buildIdentifier: '${BUILD_NUMBER}',
           browserstackLocal: true,
           opts: { forcelocal: false, localIdentifier: "flutter-webdriverio-appium" },
-          app: './app/android-hello.apk',
+          app: "/Users/denniswhalen/flutter_webdriverio_appium/app/android-hello.apk"
         }
       ]
     ],
@@ -47,7 +47,7 @@ exports.config = {
   
     updateJob: false,
     specs: [
-      './test/specs/hello-testing/hello-test.js'
+      './test/specs/hello-testing/*.js'
     ],
     exclude: [],
 
@@ -56,8 +56,8 @@ exports.config = {
     screenshotPath: './errorShots/',
     baseUrl: '',
     waitforTimeout: 30000,
-    connectionRetryTimeout: 90000,
-    connectionRetryCount: 3,
+    connectionRetryTimeout: 240000,
+    connectionRetryCount: 1,
   
     framework: 'mocha',
     mochaOpts: {

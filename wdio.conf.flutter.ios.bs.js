@@ -11,7 +11,7 @@ exports.config = {
           buildIdentifier: '${BUILD_NUMBER}',
           browserstackLocal: true,
           opts: { forcelocal: false, localIdentifier: "flutter-webdriverio-appium" },
-          app: "/Users/denniswhalen/flutter_webdriverio_appium/app/ios-hello.zip"
+          app: "https://github.com/appium-userland/appium-flutter-driver/releases/download/v0.0.4/ios-sim-debug.zip"
         }
       ]
     ],

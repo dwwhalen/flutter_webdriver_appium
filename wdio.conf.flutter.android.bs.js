@@ -11,7 +11,7 @@ exports.config = {
           buildIdentifier: '${BUILD_NUMBER}',
           browserstackLocal: true,
           opts: { forcelocal: false, localIdentifier: "flutter-webdriverio-appium" },
-          app: "/Users/denniswhalen/flutter_webdriverio_appium/app/android-hello.apk"
+          app: "https://github.com/appium-userland/appium-flutter-driver/releases/download/v0.0.4/android-real-debug.apk"
         }
       ]
     ],
